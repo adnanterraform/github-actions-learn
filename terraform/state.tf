@@ -21,6 +21,6 @@
 # EOF
 
 #   website {
-#     index_document = "index.html"
+#     index_document = "hello.html"
 #   }
 # }
