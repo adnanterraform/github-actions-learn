@@ -1,6 +1,6 @@
 
 resource "aws_s3_bucket" "s3Bucket" {
-  bucket = "adnan-terraform-project-github-actions-state"
+  bucket = "adnan-github-action-resources"
   acl    = "public-read"
 
   policy = <<EOF
@@ -13,7 +13,7 @@ resource "aws_s3_bucket" "s3Bucket" {
         "s3:GetObject"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:s3:::adnan-terraform-project-github-actions-state/*",
+      "Resource": "arn:aws:s3:::adnan-github-action-resources/*",
       "Principal": "*"
     }
   ]
