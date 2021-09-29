@@ -1,6 +1,6 @@
 
 
-name: Deploy Adnan Infrastructure
+name: Deploy Infrastructure
 
 on:
   push:
