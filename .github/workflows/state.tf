@@ -1,3 +1,4 @@
+
 resource "aws_s3_bucket" "s3Bucket" {
   bucket = "adnan-terraform-project-github-actions-state"
   acl    = "public-read"

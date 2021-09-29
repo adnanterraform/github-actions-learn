@@ -5,7 +5,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "adnan-terraform-project-github-actions--state"
+    bucket = "adnan-terraform-project-github-actions-state"
     key    = "terraform.tfstate"
     region = "eu-west-1"
   }
