@@ -5,7 +5,7 @@ name: Deploy Infrastructure
 on:
   pull_request:
     branches:
-      - main
+      - test123
   push:
     branches:
       - main
