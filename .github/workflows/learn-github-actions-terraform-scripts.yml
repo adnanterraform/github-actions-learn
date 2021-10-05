@@ -28,7 +28,7 @@ jobs:
           cd ${GITHUB_WORKSPACE}
           bin/lint.sh integration
   integration_plan:
-    needs: integration_lint
+    needs: Integration_lint
     name: Integration_plan
     runs-on: "ubuntu-latest"
     steps:
