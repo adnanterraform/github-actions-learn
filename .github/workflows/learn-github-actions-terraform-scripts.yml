@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: "Checkout Code"
         uses: "actions/checkout@v2"
-        with:
+        # with:
         # ref: ${{ github.event.pull_request.head.sha }} # Checkout PR HEAD commit instead of merge commit
       - name: Linting check
         id: fmt
@@ -43,7 +43,7 @@ jobs:
          bin/plan.sh integration
       - name: Upload plan file
         uses: actions/upload-artifact@v2
-        with:
+        # with:
         path: terraform/terraform-*.plan
 
       - name: Sync S3
