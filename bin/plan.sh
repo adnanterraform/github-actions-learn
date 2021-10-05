@@ -1,4 +1,4 @@
-# !/bin/sh
+#!/bin/sh
 set -xe
 ENV="${1}"
 echo "Changes prepared for the ${ENV} Envirnonment."
