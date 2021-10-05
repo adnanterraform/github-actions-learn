@@ -4,7 +4,7 @@ ENV="${1}"
 echo "You are working on the ${ENV} Envirnonment."
 brew install tfenv
 tfenv install
-chmod +x bin/lint.sh
+chmod +x lint.sh
 cd terraform
 LINT_OUTPUT=$(terraform fmt -check=true -write=false -diff=false -list=true)
 LINT_RETURN="$?"

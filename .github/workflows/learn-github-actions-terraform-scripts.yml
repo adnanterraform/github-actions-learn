@@ -1,4 +1,4 @@
-name: "Intergration Plan workflow"
+name: "Integration Plan Workflow"
 
 'on':
   push:
