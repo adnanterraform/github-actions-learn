@@ -36,7 +36,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     - name: Sync S3
-      uses: adnanterraform/github-actions-learnn@main
+      uses: adnanterraform/github-actions-learnn@master
       env:
         SOURCE_DIR: './src'
         AWS_REGION: 'eu-west-1'
