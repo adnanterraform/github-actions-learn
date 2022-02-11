@@ -3,9 +3,6 @@
 name: Deploy Infrastructure
 
 on:
-  pull_request:
-    branches:
-      - test123
   push:
     branches:
       - main
@@ -39,7 +36,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     - name: Sync S3
-      uses: jakejarvis/s3-sync-action@master
+      uses: adnanterraform/github-actions-learnn@main
       env:
         SOURCE_DIR: './src'
         AWS_REGION: 'eu-west-1'
